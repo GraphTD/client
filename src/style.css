@@ -6,25 +6,25 @@
     --text-color: azure;
 }
 
-*{
+* {
     margin: 0;
 }
 
-html{
+html {
     width: 100vw;
     height: 100vh;
 
     color: var(--element-hover-color);
     font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-body{
+body {
     width: 100vw;
     height: 100vh;
 }
 
-header{
+header {
     width: 100%;
     height: 6%;
     background-color: var(--gray-color);
@@ -35,7 +35,7 @@ header{
     position: relative; /* for box-shadow*/
 }
 
-.menu{
+.menu {
     width: auto;
     height: 100%;
     display: flex;
@@ -43,21 +43,21 @@ header{
     align-items: center;
 }
 
-.left-menu{
+.left-menu {
     margin-left: 2%;
     justify-content: flex-start;
 }
 
-.right-menu{
+.right-menu {
     margin-right: 2%;
     justify-content: flex-end;
 }
 
-.right-menu button{
+.right-menu button {
     background-color: var(--gray-color);
 }
 
-button{
+button {
     margin-right: 5px;
     margin-left: 5px;
     width: 90px;
@@ -70,26 +70,26 @@ button{
     justify-content: center;
     align-items: center;
 }
-button:hover{
+button:hover {
     background-color: var(--element-hover-color);
 }
 
-button img{
+button img {
     width: 18px;
     height: 18px;
     margin-right: 8px;
     transition: 0.3s;
 }
 
-.name-button{
+.name-button {
     color: var(--text-color);
 }
 
-#create-delete{
+#create-delete {
     background-color: rgb(42, 169, 114);
 }
 
-main{
+main {
     height: 94%;
     width: 100%;
     display: flex;
@@ -97,7 +97,7 @@ main{
     z-index: 0;
 }
 
-.side-panel-container{
+.side-panel-container {
     width: 0%;
     height: 100%;
     background-color: var(--gray-color);
@@ -108,7 +108,7 @@ main{
     transition: 1s;
 }
 
-.side-panel{
+.side-panel {
     height: 100%;
     width: 100%;
     overflow: scroll;
@@ -126,17 +126,17 @@ main{
     background-color: var(--element-color);
     border-radius: 20px;
 }
-.side-panel::-webkit-scrollbar-corner{
+.side-panel::-webkit-scrollbar-corner {
     background-color: var(--gray-color);
 }
 
-.panel-resizer{
+.panel-resizer {
     height: 100%;
     width: 10px;
     background-color: var(--gray-color);
     cursor: col-resize;
 }
-.canvas-section{
+#canvas-section {
     background-color: var(--blue-color);
     width: 100%;
     height: 100%;
@@ -145,26 +145,26 @@ main{
     margin-right: 0;
 }
 
-.canvas-section::-webkit-scrollbar {
+#canvas-section::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
-  
-.canvas-section::-webkit-scrollbar-track {
+
+#canvas-section::-webkit-scrollbar-track {
     background: var(--blue-color);
 }
-  
-.canvas-section::-webkit-scrollbar-thumb {
+
+#canvas-section::-webkit-scrollbar-thumb {
     background-color: var(--element-color);
     border-radius: 20px;
 }
 
-.canvas-section::-webkit-scrollbar-corner{
+#canvas-section::-webkit-scrollbar-corner {
     background-color: var(--blue-color);
 }
 
 @media (max-aspect-ratio: 3/2) {
-    .icon{
+    .icon {
         margin-right: 5px;
         margin-left: 5px;
         width: 30px;
@@ -173,21 +173,20 @@ main{
         background-color: var(--gray-color);
         border: none;
         border-radius: 5px;
-    
+
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .name-button{
+    .name-button {
         display: none;
     }
-    .icon img{
+    .icon img {
         width: 20px;
         height: 20px;
         margin-right: 0px;
     }
 }
-
 
 i {
     position: fixed;
@@ -195,25 +194,25 @@ i {
     border-radius: 50%;
     animation: animate linear infinite;
 }
-  
+
 i:nth-child(even) {
     background-color: transparent;
     border: 1px solid #ad0670;
 }
-  
+
 @keyframes animate {
     0% {
-      transform: translateY(0);
-      opacity: 0;
+        transform: translateY(0);
+        opacity: 0;
     }
     10% {
-      opacity: 1;
+        opacity: 1;
     }
     90% {
-      opacity: 1;
+        opacity: 1;
     }
     100% {
-      transform: translateY(-2000%);
-      opacity: 0;
+        transform: translateY(-2000%);
+        opacity: 0;
     }
 }
